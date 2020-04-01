@@ -1,0 +1,57 @@
+body {
+    background-color: #fff;
+    color: #4d4d4d;
+}
+.title {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0.35em;  
+    display: inline-block;
+    color: rgba(0,0,0,.99);
+}
+.nav-item {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11px;
+    letter-spacing: .2em;
+}
+.navbar-light .navbar-toggler {
+    border-color: #fff;
+}
+@media screen and (max-width: 992px) {
+    .title {
+        font-size: 32px;
+        letter-spacing: 0.15em;  
+    }
+    .container-lg {
+        padding-bottom: 0!important;
+        padding-top: 0!important;
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    .navbar {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 26px;
+        letter-spacing: 0.15em;  
+    }
+    .navbar {
+        padding-right: 1.75rem;
+        padding-left: 1.75rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .title {
+        font-size: 22px;
+        letter-spacing: 0.15em;
+    }
+    .navbar {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    }
+}
