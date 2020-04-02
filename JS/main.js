@@ -1,9 +1,3 @@
-// $(document).ready(function(){
-// 	$('#nav-icon').click(function(){
-// 		$(this).toggleClass('open');
-// 	});
-// });
-
 function openNav() {
     document.getElementById("navbarSupportedContent").style.width = "100%";
   }

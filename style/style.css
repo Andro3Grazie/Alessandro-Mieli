@@ -19,6 +19,30 @@ body {
 .navbar-light .navbar-toggler {
     border-color: #fff;
 }
+/* .card-title {
+    color: #7a002f;
+    font-weight: bold;
+    white-space: pre-wrap;
+    letter-spacing: 0.05em;
+    font-size: 24px;
+    letter-spacing: 0px;    
+    text-transform: none;
+} */
+.card-title, .card-subtitle {
+    color: #7a002f;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+.card-title, .card-subtitle {
+    font-size: 50px; 
+}
+.card-title {
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
+}
+.card-subtitle {
+    font-weight: 300;
+}
 @media screen and (max-width: 992px) {
     .title {
         font-size: 32px;
@@ -33,6 +57,14 @@ body {
     .navbar {
         padding-right: 2.5rem;
         padding-left: 2.5rem;
+        background-color: rgb(242, 242, 242);
+    }
+    .navbar-light .navbar-toggler {
+        border-color: rgb(242, 242, 242);
+    }
+    .card {
+        max-width: 90%;
+        margin: auto;
     }
 }
 @media screen and (max-width: 768px) {
@@ -44,6 +76,9 @@ body {
         padding-right: 1.75rem;
         padding-left: 1.75rem;
     }
+    .card-title, .card-subtitle{
+        font-size: 32px;
+    }
 }
 @media screen and (max-width: 576px) {
     .title {
@@ -53,5 +88,12 @@ body {
     .navbar {
         padding-right: 0.75rem;
         padding-left: 0.75rem;
+    }
+    .card-title, .card-subtitle{
+        font-size: 26px;
+    }
+    .card {
+        max-width: 100%;
+        margin: auto;
     }
 }
