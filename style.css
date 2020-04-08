@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+    .card-title, .card-subtitle{
+        font-size: 32px;
+    }    
+}
+@media screen and (max-width: 576px) {
+    .card-title, .card-subtitle{
+        font-size: 26px;
+    }
+}

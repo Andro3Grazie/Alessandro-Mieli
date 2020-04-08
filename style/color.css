@@ -1,0 +1,42 @@
+/* navbar */
+.navbar-container {
+    background-color: #fff;
+    color: #4d4d4d;
+}
+
+
+/* media query */
+
+/* large tablet */
+@media screen and (max-width: 992px) {
+    /* navbar */
+    .navbar-container,  .navbar-light .navbar-toggler {
+        background-color: rgb(242, 242, 242);
+        border-color: rgb(242, 242, 242);
+    }
+    /* fixed-top */
+    .navbar-fix {
+        background-color: rgb(242, 242, 242);
+        border-color: rgb(242, 242, 242);
+    }
+}
+/* tablet */
+@media screen and (max-width: 768px) {
+
+}
+/* smartphone */
+@media screen and (max-width: 576px) {
+
+}
+/* small smartphone */
+
+
+
+
+/* NavBar
+.title {
+    color: rgba(0,0,0,.99);
+}
+.card-title, .card-subtitle {
+    color: #7a002f;
+} */

@@ -2,6 +2,8 @@ body {
     background-color: #fff;
     color: #4d4d4d;
 }
+
+/* NavBar */
 .title {
     font-size: 36px;
     font-weight: 100;
@@ -19,22 +21,12 @@ body {
 .navbar-light .navbar-toggler {
     border-color: #fff;
 }
-/* .card-title {
-    color: #7a002f;
-    font-weight: bold;
-    white-space: pre-wrap;
-    letter-spacing: 0.05em;
-    font-size: 24px;
-    letter-spacing: 0px;    
-    text-transform: none;
-} */
+
+/* Card */
 .card-title, .card-subtitle {
     color: #7a002f;
-    letter-spacing: 0px;
     text-transform: none;
-}
-.card-title, .card-subtitle {
-    font-size: 50px; 
+    font-size: 50px;
 }
 .card-title {
     letter-spacing: 0.05em;
@@ -43,16 +35,38 @@ body {
 .card-subtitle {
     font-weight: 300;
 }
+
+/* Fine */
+.list-group-item {
+    border: none;
+    margin-left: 0;
+    margin-right: 0;
+    border-left: 1px solid #e6e6e6;
+    padding-left: 1.618em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.tilte-experience {
+    font-style: normal;
+    font-size: 16px!important;
+    font-weight: bold!important;
+    letter-spacing: .025em;
+    line-height: 1.8em;
+    text-transform: none;
+    color: #484848;
+}
+.section-title {
+    font-weight: 400;
+}
+ul {
+    padding-inline-start: 30px;
+    line-height: 35px;
+}
 @media screen and (max-width: 992px) {
+    /* NavBar */
     .title {
         font-size: 32px;
         letter-spacing: 0.15em;  
-    }
-    .container-lg {
-        padding-bottom: 0!important;
-        padding-top: 0!important;
-        padding-left: 0!important;
-        padding-right: 0!important;
     }
     .navbar {
         padding-right: 2.5rem;
@@ -62,7 +76,21 @@ body {
     .navbar-light .navbar-toggler {
         border-color: rgb(242, 242, 242);
     }
+    .container-lg {
+        padding-bottom: 0!important;
+        padding-top: 0!important;
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    
     .card {
+        max-width: 90%;
+        margin: auto;
+    }
+    hr {
+        width: 90%;
+    }
+    .list-group {
         max-width: 90%;
         margin: auto;
     }
@@ -78,7 +106,7 @@ body {
     }
     .card-title, .card-subtitle{
         font-size: 32px;
-    }
+    }    
 }
 @media screen and (max-width: 576px) {
     .title {
@@ -95,5 +123,13 @@ body {
     .card {
         max-width: 100%;
         margin: auto;
+    }
+    .list-group {
+        padding: 0 20px;
+        max-width: 90%;
+        margin: auto;
+    }
+    hr {
+        width: 88%;
     }
 }

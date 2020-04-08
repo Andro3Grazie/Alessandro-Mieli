@@ -1,94 +1,359 @@
 <!doctype html>
-<html lang="it">
-  <head>
+<html lang="en">
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-    
-    <!-- My style -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Mt style  -->
+    <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/transform.css">
     <link rel="stylesheet" href="style/full-page-menu.css">
+    <link rel="stylesheet" href="style/color.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="style/imgs/A.M.png" type="image/x-icon">
-    
+    <link rel="shortcut icon" href="imgs/A.M.png" type="image/x-icon">
+
     <title>Alessandro Mieli</title>
-  </head>
-  <body>
-    <div class="container-lg px-5 py-4">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <!-- Nome e/o Immagine -->
-        <a class="navbar-brand" href="#">
-          <!-- <img src="style/imgs/A.M.png" width="100" height="100" class="d-inline-block align-top" alt="Alessandro Mieli"> -->
-          <span class="title">ALESSANDRO MIELI</span>
-        </a>
-        <!-- Bottone telefono -->
-        <button class="navbar-toggler" type="button">
-          <span class="navbar-toggler-icon" onclick="openNav()"></span>
-        </button>
-        
-        <!-- Menu su smartphone -->
-        <div id="navbarSupportedContent" class="overlay">
-          <a href="javascript:void(0)" class="closebtn pt-3" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
-            <a onclick="closeNav()">Home</a>
-            <a href="work-in-progress/">Portfolio</a>
-            <a href="work-in-progress/">Contanct</a>
-          </div>
-        </div>
 
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="work-in-progress/">PORTFOLIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="work-in-progress/">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-        <!-- <span class="navbar-text">
-          Studente
-        </span> -->
-      </nav>
-      <div class="card border-none mb-3 mt-lg-5 mt-sm-4">
-        <div class="row no-gutters">
-          <div class="col-sm-4">
-            <img src="style/imgs/AlessandroMieli.gif  " class="card-img" alt="...">
-          </div>
-          <div class="col-sm-8">
-            <div class="card-body py-sm-0">
-              <h5 class="card-title"><strong><em>Ehilà</em></strong><em>,</em></h5>
-              <h5 class="card-subtitle mb-2"><strong>sono Alessandro</strong></h5>
-              <p class="card-text pt-3">
-                <em>Uno studente, mi piace molto la programmazione. Frequento l'ultimo anno, per il conseguimento del diploma in informatica e telecomunicazioni.</em>
-              </p>
+    <!-- Below will appear/disappear the style to invert color theme -->
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <div class="navbar-container container-lg px-0">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-fix px-lg-0" id="navbar-scroll">
+            <!-- Nome -->
+            <div class="navbar-div">
+                <a class="navbar-brand" href="#"><span class="navbar-title" id="navbar-scroll-title">ALESSANDRO MIELI</span></a>
+                <br>
+                <span class="navbar-underTitle text-muted uppercase display-none-lg">Studente</span>
             </div>
-          </div>
-        </div>
-      </div>
+            <!-- Bottone telefono -->
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon" onclick="openNav()"></span>
+            </button>
 
+            <!-- Menu su smartphone -->
+            <div id="navbarSupportedContent" class="overlay">
+                <a href="javascript:void(0)" class="closebtn pt-3" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a onclick="closeNav()">Home</a>
+                    <a href="work-in-progress-page/">Portfolio</a>
+                    <a href="work-in-progress-page/">Contanct</a>
+                </div>
+            </div>
 
-
-
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="work-in-progress-page/">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="work-in-progress-page/">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
-    
+    <div class="text-center display-non" style="margin-top: 120px;">
+        <p>1)orem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum iusto odit molestias nam quisquam
+            neque quod dicta reiciendis, similique cum pariatur error odio consequatur quae? Eum quia voluptate
+            provident!</p>
+    </div>
+
+    <div class="container mx-auto display-none">
+        <div class="text-center">
+            <img src="https://media.giphy.com/media/7acBuI9xJomek/giphy.gif" width="100%">
+            <br><br>
+            <h2>We'll be back soon</h2>
+            <p>This page is work in progress, sorry for the inconvenience</p>
+        </div>
+    </div>
+    <div class="display-none">
+        <div class="container-lg">
+            <!-- Section 1 -->
+            <div class="row">
+                <!-- <div class="card border-none mt-lg-5 mt-sm-4"> -->
+                <div class="row card no-gutters border-none mt-lg-5 mt-sm-4">
+                    <div class="col-sm-4">
+                        <img src="../AlessandroMieli/style/imgs/AlessandroMieli.gif  " class="card-img" alt="...">
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="card-body">
+                            <h5>
+                                <strong><em class="card-title">Ehilà</em><span class="card-subtitle">,</span></strong>
+                                <br>
+                                <strong class="card-subtitle">sono Alessandro</strong>
+                            </h5>
+                            <p class="card-text">
+                                <em>Uno studente, mi piace molto la programmazione. Frequento l'ultimo anno, per il
+                                    conseguimento del diploma in informatica e telecomunicazioni.</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="pt-md-4">
+                <h3 class="section-title mb-3">ESPERIENZE</h3>
+                <div class="d-flex w-100 justify-content-between">
+                    <p class="mb-4">
+                        <strong class="tilte-experience">Web developer</strong>
+                        - <a href="https://www.codicefiscaleonline.tk/" target="_blank"
+                            class="link">www.codicefiscaleonline.tk</a> - Remote
+                        <br>
+                        <span class="text-muted">Marzo 2020</span>
+                    </p>
+                </div>
+                <div class="d-flex w-100 justify-content-between">
+                    <p class="mb-4">
+                        <strong class="tilte-experience">Aiuto cuoco</strong>
+                        - Marì maritozzi - Via urbana, Roma
+                        <br>
+                        <span class="text-muted">Nov 2019</span>
+                    </p>
+                </div>
+                <div class="d-flex w-100 justify-content-between">
+                    <p class="mb-4">
+                        <strong class="tilte-experience">Assistente alle visite museali</strong>
+                        - Galleria Casoli De Luca - Piazza Campitelli, Roma
+                        <br>
+                        <span class="text-muted">Ott 2019</span>
+                    </p>
+                </div>
+                <div class="d-flex w-100 justify-content-between">
+                    <p class="mb-4">
+                        <strong class="tilte-experience">Addetto alle vendire</strong>
+                        - Tiziana Fabio Moda, Roma
+                        <br>
+                        <span class="text-muted">Giugno 2019 - Set 2019</span>
+                    </p>
+                </div>
+                <div class="d-flex w-100 justify-content-between">
+                    <p class="mb-4">
+                        <strong class="tilte-experience">Disegnatore sviluppatore di prodotto</strong>
+                        - Università degli Studi Niccolò Cusano - Via urbana, 31 - Roma
+                        <br>
+                        <span class="text-muted">Nov 2019</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr> sistemare perchè marco è down
+        <br>
+        <div class="row">
+            <div class="col-12 list-group">
+                <h3 class="section-title col-12 px-lg-0" style="margin-bottom: 2rem;">ISTRUZIONE</h3>
+            </div>
+            <div class="col-lg-6 list-group-item">
+                <div class="list-group">
+                    <p class="mb-4 list-group-item">
+                        <strong class="tilte-experience uppercase">Diploma in informatica e telecomunicazioni</strong>
+                        <br>
+                        <span class="text-muted">IIS Federico Caffè, Roma <em>(diplomato a giugno 2020, si
+                                spera)</em></span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="list-group">
+                    <p class="mb-4 list-group-item">
+                        <strong class="tilte-experience uppercase">Masterclass in crittografia</strong>
+                        <br>
+                        <span class="text-muted">Università degli studi Roma Tre, Marzo 2020</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr> sistemare perchè marco è down
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <h3 class="list-group section-title" style="margin-bottom: 0;">LINGUE</h3>
+            </div>
+            <div class="col-6">
+                <ul data-rte-list="default">
+                    <p class="mb-4">
+                        <li><strong class="tilte-experience">English</strong> <em>· </em>Avanzato (B2)</li>
+                        <li><strong class="tilte-experience">Italiano</strong> <em>· </em>Nativa</li>
+                        <li style="list-style-type: none;">HTML & CSS3</li>
+                        <li style="list-style-type: none;">JavaScript</li>
+                        <li style="list-style-type: none;">PHP</li>
+                        <li style="list-style-type: none;">MySQL</li>
+                        <li style="list-style-type: none;">Python</li>
+                        <li style="list-style-type: none;">C++</li>
+                    </p>
+                </ul>
+            </div>
+            <div class="col-6">
+
+            </div>
+        </div>
+        <div class="list-group pt-md-4">
+            <h3 class="section-title" style="margin-bottom: 0;">LINGUE</h3>
+            <div class="list-group-item border-none w-100 justify-content-between pl-0 d-inline">
+                <ul data-rte-list="default">
+                    <p class="mb-4">
+                        <li><strong class="tilte-experience">English</strong> <em>· </em>Avanzato (B2)</li>
+                        <li><strong class="tilte-experience">Italiano</strong> <em>· </em>Nativa</li>
+                        HTML & CSS3
+                    </p>
+                </ul>
+            </div>
+            <div class="list-group-item border-none w-100 justify-content-between pl-0 d-inline">
+                tools
+            </div>
+        </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-    <script src="JS/main.js"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- My own JavaScript -->
+    <script src="script/functions.js"></script>
+    <script src="script/daylight.js"></script>
+    <script src="script/sunRiseSet.js"></script>
+    <script src="script/reduce-onscroll.js"></script>
+</body>
+
 </html>
