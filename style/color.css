@@ -1,7 +1,29 @@
+/* testo riempitivo */
+.testo-riempitivo {
+    color: white;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+
+
 /* navbar */
 .navbar-container {
     background-color: #fff;
     color: #4d4d4d;
+}
+
+/* about me */
+.aboutme-div {
+    color: #7a002f;
+}
+/* title and description */
+.aboutme-text {
+    color: #000;
 }
 
 /* footer */
@@ -16,11 +38,12 @@
     color: #575757!important;
 }
 
+
 /* media query */
 
 /* large tablet */
 @media screen and (max-width: 992px) {
-    /* navbar */
+    /* navbar, mobile button */
     .navbar-container,  .navbar-light .navbar-toggler {
         background-color: rgb(242, 242, 242);
         border-color: rgb(242, 242, 242);

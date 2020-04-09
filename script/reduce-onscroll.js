@@ -1,3 +1,4 @@
+var pc = "(min-width: 993px)";
 var largeTablet = "(max-width: 992px)";
 var tablet = "(max-width: 768px)";
 var smartphone = "(max-width: 576px)";
@@ -6,6 +7,9 @@ var smallSmartphone = "(max-width: 343px)";
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
+    if (window.matchMedia(pc).matches) {
+        document.getElementById("navbar-scroll").style.padding = "2.5rem 1rem";
+    }
     if (window.matchMedia(largeTablet).matches) {
         // large tablet
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {

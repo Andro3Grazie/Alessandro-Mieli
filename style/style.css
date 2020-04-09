@@ -1,0 +1,116 @@
+/* about me */
+.aboutme {
+    padding: 15px 0;
+}
+.aboutme-div {
+    padding: 0 17px 17px 17px;
+}
+/* image */
+.aboutme-img {
+    padding-right: 17px;
+}
+/* title and description */
+.aboutme-title {
+    font-size: 3rem;
+}
+.aboutme-comma {
+    font-weight: 300;
+}
+.aboutme-name {
+    letter-spacing: .075em;
+    font-size: 3rem;
+    font-weight: 100;
+}
+.aboutme-text {
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+/* media query */
+
+/* large tablet */
+@media screen and (max-width: 992px) {
+    /* body */
+    .body {
+        margin-top: 98px;
+    }
+
+    /* about me */
+    .aboutme {
+        padding: 15px 20px;
+    }
+    .aboutme-div {
+        padding: 0 0 17px;
+    }
+    /* title and description */
+    .aboutme-title {
+        font-size: 2.5rem;
+    }
+    .aboutme-name {
+        font-size: 2.75rem;
+    }
+    .aboutme-text {
+        font-size: 1.0rem;
+        line-height: 1.5;
+    }
+}
+/* tablet */
+@media screen and (max-width: 767px) {
+    /* body */
+    .body {
+        margin-top: 93px;
+    }
+
+    /* about me */
+    /* image */
+    .aboutme-img {
+        padding-right: 0;
+    }
+    /* title and description */
+    .aboutme-title {
+        font-size: 2.25rem;
+        margin-bottom: 24px;
+    }
+    .aboutme-name {
+        font-size: 2.5rem;
+    }
+    .aboutme-text {
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+}
+/* smartphone */
+@media screen and (max-width: 576px) {
+    /* body */
+    .body {
+        margin-top: 80px;
+    }
+
+    /* about me */
+    /* title and description */
+    .aboutme-title {
+        font-size: 2.25rem;
+    }
+    .aboutme-name {
+        font-size: 2.5rem;
+    }
+    .aboutme-text {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
+/* small smartphone */
+@media screen and (max-width: 343px) {
+    /* about me */
+    /* title and description */
+    .aboutme-title {
+        font-size: 1.75rem;
+    }
+    .aboutme-name {
+        font-size: 2rem;
+    }
+    .aboutme-text {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+}
