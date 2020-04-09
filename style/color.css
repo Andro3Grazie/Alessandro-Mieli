@@ -4,6 +4,17 @@
     color: #4d4d4d;
 }
 
+/* footer */
+.footer {
+    background-color: rgb(242, 242, 242);
+    color: #4d4d4d;
+}
+.contact-icon a {
+    color: #000;
+}
+.contact-item-hover {
+    color: #575757!important;
+}
 
 /* media query */
 
@@ -29,14 +40,6 @@
 
 }
 /* small smartphone */
+@media screen and (max-width: 343px) {
 
-
-
-
-/* NavBar
-.title {
-    color: rgba(0,0,0,.99);
 }
-.card-title, .card-subtitle {
-    color: #7a002f;
-} */

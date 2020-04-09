@@ -2,6 +2,7 @@ body {
     background-color: #2d2d2d!important;
     color: #fff!important;
 }
+
 /* navbar  */
 .navbar-container {
     background-color: #2d2d2d!important;
@@ -15,32 +16,53 @@ body {
 }
 /* full-page-menu */
 .overlay {
-    background-color: #2d2d2d;
+    background-color: #2d383c;
 }
 .overlay a{
     color: rgba(255, 255, 255, .8)!important;
 }
 
+/* footer */
+.footer {
+    background-color: #2d383c;
+    color: rgba(255, 255, 255, .9)!important;
+}
+.contact-icon a {
+    color: rgba(255, 255, 255, .8);
+}
+.contact-item-hover {
+    color: rgba(255, 255, 255, 0.3)!important;
+}
+
+
 
 /* Media query */
+
+/* large tablet */
 @media screen and (max-width: 992px) {
     /* navbar */
     .navbar-container,  .navbar-light .navbar-toggler {
-        background-color: #272727!important;
-        border-color: #272727!important;
+        background-color: #2d383c!important;
+        border-color: #2d383c!important;
     }
     .navbar-light .navbar-toggler .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
-    /* fixed-top */
+    /* navbar fixed-top */
     .navbar-fix {
-        background-color: #272727!important;
-        border-color: #272727!important;
+        background-color: #2d383c!important;
+        border-color: #2d383c!important;
     }
 }
+/* tablet */
 @media screen and (max-width: 768px) {
 
 }
+/* smartphone */
 @media screen and (max-width: 576px) {
 
+}
+/* small smartphone */
+@media screen and (max-width: 343px) {
+    
 }

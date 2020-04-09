@@ -1,4 +1,3 @@
-/* navbar */
 .navbar-div {
     line-height: 90%;
 }
@@ -26,7 +25,6 @@
 
 /* large tablet */
 @media screen and (max-width: 992px) {
-    /* navbar */
     .navbar-title {
         letter-spacing: 0.25em;  
     }
@@ -41,7 +39,6 @@
 }
 /* tablet */
 @media screen and (max-width: 768px) {
-    /* navbar */
     .navbar-title {
         font-size: 32px;
         letter-spacing: 0.15em;  

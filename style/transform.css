@@ -8,6 +8,8 @@
     text-transform: uppercase;
 }
 
+/* media query */
+
 /* large tablet */
 @media screen and (max-width: 992px) {
     /* Do not display on large tablet screen */
