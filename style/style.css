@@ -10,15 +10,14 @@
     padding-right: 17px;
 }
 /* title and description */
-.aboutme-title {
+.aboutme-title, .aboutme-name {
     font-size: 3rem;
 }
 .aboutme-comma {
-    font-weight: 300;
+    font-weight: 100;
 }
 .aboutme-name {
     letter-spacing: .075em;
-    font-size: 3rem;
     font-weight: 100;
 }
 .aboutme-text {
