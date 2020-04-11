@@ -1,4 +1,16 @@
-/* about me */
+/* ------------------- body ------------------- */
+
+/* ------- separate line between sections ------- */
+.break-sections {
+    padding: 17px 0;
+}
+.break-sections hr {
+    height: 1px!important;
+    border: none;
+    margin: 8px auto;
+}
+
+/* ------- about me ------- */
 .aboutme {
     padding: 15px 0;
 }
@@ -25,16 +37,55 @@
     line-height: 1.7;
 }
 
-/* media query */
+/* ------- experiences ------- */
+.experiences {
+    padding: 15px 0;
+}
+/* title */
+.experiences-title {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+/* list item */
+.experiences-list-item {
+    border: none;
+    border-radius: 0!important;
+    border-width: 1px!important;
+    padding: 0 0 16px;
+    padding-left: 1.618em;
+}
+.experiences-list-item:first-child {
+    padding-top: 3px;
+    margin-top: 12px;
+}
+.experiences-list-item:last-child {
+    padding-bottom: 3px;
+    margin-bottom: 12px;
+}
+/* links */
+.experiences-list-item p a {
+    text-decoration: none;
+    padding-bottom: .05em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    transition: border-color .15s ease-out, color .15s ease-out;
+}
 
+
+/* ------------------- media query ------------------- */
 /* large tablet */
 @media screen and (max-width: 992px) {
-    /* body */
+/* ------------------- body ------------------- */
     .body {
         margin-top: 98px;
     }
+    
+/* ------- separate line between sections ------- */
+    .break-sections {
+        padding: 17px 20px;
+    }
 
-    /* about me */
+/* ------- about me ------- */
     .aboutme {
         padding: 15px 20px;
     }
@@ -52,15 +103,20 @@
         font-size: 1.0rem;
         line-height: 1.5;
     }
+
+/* ------- experiences ------- */
+    .experiences {
+        padding: 15px 20px;
+    }
 }
 /* tablet */
 @media screen and (max-width: 767px) {
-    /* body */
+/* ------------------- body ------------------- */
     .body {
         margin-top: 93px;
     }
 
-    /* about me */
+/* ------- about me ------- */
     /* image */
     .aboutme-img {
         padding-right: 0;
@@ -80,12 +136,12 @@
 }
 /* smartphone */
 @media screen and (max-width: 576px) {
-    /* body */
+/* ------------------- body ------------------- */
     .body {
         margin-top: 80px;
     }
 
-    /* about me */
+/* ------- about me ------- */
     /* title and description */
     .aboutme-title {
         font-size: 2.25rem;
@@ -100,7 +156,7 @@
 }
 /* small smartphone */
 @media screen and (max-width: 343px) {
-    /* about me */
+/* ------- about me ------- */
     /* title and description */
     .aboutme-title {
         font-size: 1.75rem;

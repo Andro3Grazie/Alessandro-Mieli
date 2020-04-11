@@ -5,13 +5,14 @@
 
 
 
-
+/* ------------------- full page ------------------- */
 body {
     background-color: #2d2d2d!important;
     color: #fff!important;
 }
 
-/* navbar  */
+
+/* ------------------- navbar ------------------- */
 .navbar-container {
     background-color: #2d2d2d!important;
     color: #fff!important;
@@ -32,7 +33,19 @@ body {
     color: rgba(255, 255, 255, .8)!important;
 }
 
-/* about me */
+
+/* ------------------- body ------------------- */
+.section-title {
+    color: #fff!important;
+}
+
+/* ------- separate line between sections ------- */
+.break-sections hr {
+    color: #b2b2b2;
+    background-color: #b2b2b2;
+}
+
+/* ------- about me ------- */
 .aboutme {
     background-color: #2d2d2d;
 }
@@ -44,7 +57,29 @@ body {
     color: #f2f2f2;
 }
 
-/* footer */
+/* ------- experiences ------- */
+.experiences-subtitle {
+    color: #fff;
+}
+.experiences-list-item {
+    color: #f0f0f0;
+    background-color: #2d2d2d;
+    border-color: #b2b2b2!important;
+}
+.experiences-list-item p a {
+    color: #f9f9f9;
+    border-bottom-color: rgba(249, 249, 249,.3);
+}
+.experiences-list-item p a:hover {
+    color: rgba(249, 249, 249,.6);
+    border-color: rgba(249, 249, 249,.15);
+}
+.experiences-date {
+    color: #efefef!important;
+}
+
+
+/* ------------------- footer ------------------- */
 .footer {
     background-color: #363636;
     color: rgba(255, 255, 255, .9)!important;
@@ -58,12 +93,11 @@ body {
 }
 
 
-
-/* Media query */
-
+/* ------------------- media query ------------------- */
 /* large tablet */
 @media screen and (max-width: 992px) {
-    /* navbar */
+/* ------------------- navbar ------------------- */
+    /* navbar, mobile button */
     .navbar-container,  .navbar-light .navbar-toggler {
         background-color: #363636!important;
         border-color: #363636!important;

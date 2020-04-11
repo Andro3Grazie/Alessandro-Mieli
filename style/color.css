@@ -11,13 +11,25 @@
 
 
 
-/* navbar */
+/* ------------------- navbar ------------------- */
 .navbar-container {
     background-color: #fff;
     color: #4d4d4d;
 }
 
-/* about me */
+
+/* ------------------- body ------------------- */
+.section-title {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+/* ------- separate line between sections ------- */
+.break-sections hr {
+    color: #e6e6e6;
+    background-color: #e6e6e6;
+}
+
+/* ------- about me ------- */
 .aboutme-div {
     color: #7a002f;
 }
@@ -26,23 +38,42 @@
     color: #000;
 }
 
-/* footer */
+/* ------- experiences ------- */
+.experiences-subtitle {
+    color: #484848;
+}
+.experiences-list-item {
+    border-color: #e6e6e6!important;
+}
+.experiences-list-item p a {
+    color: #7a002f;
+    border-bottom-color: rgba(122, 0, 47,.3);
+}
+.experiences-list-item p a:hover {
+    color: rgba(122, 0, 47,.6);
+    border-color: rgba(122, 0, 47,.15);
+}
+
+
+/* ------------------- footer ------------------- */
 .footer {
     background-color: rgb(242, 242, 242);
     color: #4d4d4d;
 }
 .contact-icon a {
-    color: #000;
+    /* color: #000; */
+    color: #7a002f;
 }
 .contact-item-hover {
-    color: #575757!important;
+    /* color: #575757!important; */
+    color: rgba(122, 0, 47,.6)!important;
 }
 
 
-/* media query */
-
+/* ------------------- media query ------------------- */
 /* large tablet */
 @media screen and (max-width: 992px) {
+/* ------------------- navbar ------------------- */
     /* navbar, mobile button */
     .navbar-container,  .navbar-light .navbar-toggler {
         background-color: rgb(242, 242, 242);
