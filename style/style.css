@@ -1,9 +1,12 @@
 /* ------------------- body ------------------- */
-
-/* ------- separate line between sections ------- */
-.break-sections {
+.section-title {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.section-div {
     padding: 17px 0;
 }
+/* ------- separate line between sections ------- */
 .break-sections hr {
     height: 1px!important;
     border: none;
@@ -11,9 +14,6 @@
 }
 
 /* ------- about me ------- */
-.aboutme {
-    padding: 15px 0;
-}
 .aboutme-div {
     padding: 0 17px 17px 17px;
 }
@@ -37,15 +37,7 @@
     line-height: 1.7;
 }
 
-/* ------- experiences ------- */
-.experiences {
-    padding: 15px 0;
-}
-/* title */
-.experiences-title {
-    font-weight: 300;
-    margin-bottom: 10px;
-}
+/* ------- experiences, education ------- */
 /* list item */
 .experiences-list-item {
     border: none;
@@ -63,7 +55,7 @@
     margin-bottom: 12px;
 }
 /* links */
-.experiences-list-item p a {
+.experiences-list-item p a, .education-section a {
     text-decoration: none;
     padding-bottom: .05em;
     border-bottom-width: 1px;
@@ -71,6 +63,40 @@
     transition: border-color .15s ease-out, color .15s ease-out;
 }
 
+/* ------- education, languages and tools ------- */
+.education {
+    padding: 0 0 17px;
+}
+.education-title {
+    padding: 17px 0;
+    margin: 0;
+}
+.education-section {
+    padding: 17px;
+}
+
+/* ------- languages and tools ------- */
+/* -- languages -- */
+.languages-list li {
+    list-style-type: none;
+}
+.languages-list li > * {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.languages-list li > *:first-child::before {
+    padding-right: 10px;
+    content: "\2022";
+}
+.languages-list li > *:first-child::before {
+    display: inline-block;
+    text-align: right;
+    box-sizing: border-box;
+}
+/* -- tools -- */
+.tools-div {
+    padding: 8px 0 0;
+}
 
 /* ------------------- media query ------------------- */
 /* large tablet */
@@ -79,16 +105,11 @@
     .body {
         margin-top: 98px;
     }
-    
-/* ------- separate line between sections ------- */
-    .break-sections {
+    .section-div {
         padding: 17px 20px;
     }
 
 /* ------- about me ------- */
-    .aboutme {
-        padding: 15px 20px;
-    }
     .aboutme-div {
         padding: 0 0 17px;
     }
@@ -102,11 +123,6 @@
     .aboutme-text {
         font-size: 1.0rem;
         line-height: 1.5;
-    }
-
-/* ------- experiences ------- */
-    .experiences {
-        padding: 15px 20px;
     }
 }
 /* tablet */
@@ -152,6 +168,11 @@
     .aboutme-text {
         font-size: 1rem;
         line-height: 1.7;
+    }
+
+    /* ------- tools div title ------- */
+    .languages, .tools {
+        padding: 17px;
     }
 }
 /* small smartphone */

@@ -1,16 +1,3 @@
-/* testo riempitivo */
-.testo-riempitivo {
-    color: white;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
-}
-
-
-
 /* ------------------- navbar ------------------- */
 .navbar-container {
     background-color: #fff;
@@ -38,18 +25,18 @@
     color: #000;
 }
 
-/* ------- experiences ------- */
-.experiences-subtitle {
+/* ------- experiences, education, languages ------- */
+.experiences-subtitle, .education-subtitle, .languages-subtitle {
     color: #484848;
 }
 .experiences-list-item {
     border-color: #e6e6e6!important;
 }
-.experiences-list-item p a {
+.experiences-list-item p a, .education-section a {
     color: #7a002f;
     border-bottom-color: rgba(122, 0, 47,.3);
 }
-.experiences-list-item p a:hover {
+.experiences-list-item p a:hover, .education-section a:hover {
     color: rgba(122, 0, 47,.6);
     border-color: rgba(122, 0, 47,.15);
 }
