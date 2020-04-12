@@ -50,11 +50,11 @@ body {
     color: #f2f2f2;
 }
 
-/* ------- experiences, education, languages and tools ------- */
+/* ------- experiences, education, languages and tools, hobbies ------- */
 .experiences-subtitle,  .education-subtitle, .languages-subtitle {
     color: #fff;
 }
-.experiences-list-item, .languages-list li p, .tools-div p {
+.experiences-list-item, .languages-list li p, .tools-div p, .hobbies-name {
     color: #f0f0f0;
     background-color: #2d2d2d;
     border-color: #b2b2b2!important;

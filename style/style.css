@@ -63,7 +63,7 @@
     transition: border-color .15s ease-out, color .15s ease-out;
 }
 
-/* ------- education, languages and tools ------- */
+/* ------- education ------- */
 .education {
     padding: 0 0 17px;
 }
@@ -97,6 +97,21 @@
 .tools-div {
     padding: 8px 0 0;
 }
+/* ------- hobbies ------- */
+.hobbies-title {
+    padding: 0 17px 17px;
+    margin: 0;
+}
+.hobbies-div-imgs {
+    padding: 17px 17px 0;
+}
+.hobbies-div-imgs img {
+    max-width: 100%;
+}
+.hobbies-name {
+    margin-top: 7px!important;
+}
+
 
 /* ------------------- media query ------------------- */
 /* large tablet */
@@ -148,6 +163,10 @@
     .aboutme-text {
         font-size: 1.05rem;
         line-height: 1.7;
+    }
+/* ------- hobbies ------- */
+    .hobbies-div-imgs div {
+        padding: 15px;
     }
 }
 /* smartphone */

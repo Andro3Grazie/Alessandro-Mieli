@@ -21,9 +21,17 @@ function invertColor() {
     link.id = "invertColor";
 
     document.getElementsByTagName("head")[0].appendChild(link);
+
+    // Invert hobbies images color
+    $('.hobbies-img').addClass('display-none');
+    $('.hobbies-img-inverted').removeClass('display-none');
 }
 function resetColor() {
     $( "#invertColor" ).remove();
+
+    // Reset hobbies images color
+    $('.hobbies-img-inverted').addClass('display-none');
+    $('.hobbies-img').removeClass('display-none');
 }
 function chekTheme() {
     if (checkTime()) {
