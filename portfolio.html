@@ -9,31 +9,31 @@
 
     <!-- Search Engine -->
     <meta name="description"
-        content="Sono Alessandro Mieli, qui è dove puoi contattarmi">
-    <meta name="image" content="https://alessandromieli.ga/imgs/preview-image-contact.png">
+        content="Sono Alessandro Mieli, questo è il mio portfolio online.">
+    <meta name="image" content="https://alessandromieli.ga/imgs/preview-image-portfolio.png">
     <!-- Schema.org for Google -->
-    <meta itemprop="name" content="Contact — Alessandro Mieli">
+    <meta itemprop="name" content="Portfolio — Alessandro Mieli">
     <meta itemprop="description"
-        content="Sono Alessandro Mieli, qui è dove puoi contattarmi">
-    <meta itemprop="image" content="https://alessandromieli.ga/imgs/preview-image-contact.png">
+        content="Sono Alessandro Mieli, questo è il mio portfolio online.">
+    <meta itemprop="image" content="https://alessandromieli.ga/imgs/preview-image-portfolio.png">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Contact — Alessandro Mieli">
-    <meta name="twitter:site" content="https://alessandromieli.ga/contact.html">
-    <meta name="twitter:image" content="https://alessandromieli.ga/imgs/preview-image-contact.png">
+    <meta name="twitter:title" content="Portfolio — Alessandro Mieli">
+    <meta name="twitter:site" content="https://alessandromieli.ga/portfolio.html">
+    <meta name="twitter:image" content="https://alessandromieli.ga/imgs/preview-image-portfolio.png">
     <meta name="twitter:description"
-        content="Sono Alessandro Mieli, qui è dove puoi contattarmi">
+        content="Sono Alessandro Mieli, questo è il mio portfolio online.">
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta property="og:title" content="Contact — Alessandro Mieli">
+    <meta property="og:title" content="Portfolio — Alessandro Mieli">
     <meta property="og:description"
-        content="Sono Alessandro Mieli, qui è dove puoi contattarmi">
-    <meta property="og:image" content="https://alessandromieli.ga/imgs/preview-image-contact.png">
-    <meta property="og:url" content="https://alessandromieli.ga/contact.html">
-    <meta property="og:site_name" content="Contact — Alessandro Mieli">
+        content="Sono Alessandro Mieli, questo è il mio portfolio online.">
+    <meta property="og:image" content="https://alessandromieli.ga/imgs/preview-image-portfolio.png">
+    <meta property="og:url" content="https://alessandromieli.ga/portfolio.html">
+    <meta property="og:site_name" content="Portfolio — Alessandro Mieli">
     <meta property="og:locale" content="it_IT">
     <meta property="og:type" content="website">
 
-    <title>Contact — Alessandro Mieli</title>
+    <title>Portfolio — Alessandro Mieli</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -86,7 +86,7 @@
     </script>
     
     <div class="page-container">
-        
+
         <!-- Navbar -->
         <div class="navbar-container container-lg px-0">
             <nav class="navbar navbar-expand-lg navbar-light navbar-fix px-lg-0" id="navbar-scroll">
@@ -109,8 +109,8 @@
                     <a href="javascript:void(0)" class="closebtn pt-3" onclick="closeNav()">&times;</a>
                     <div class="overlay-content">
                         <a href="index.html">Home</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="#" onclick="closeNav()">Contanct</a>
+                        <a href="#" onclick="closeNav()">Portfolio</a>
+                        <a href="contact.html">Contanct</a>
                     </div>
                 </div>
 
@@ -120,11 +120,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">HOME</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
-                        </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#" id="contactme-link">CONTACT <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">PORTFOLIO <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -135,62 +135,17 @@
         <!-- Body -->
         <div class="container-lg px-0 body">
 
-            <!-- CONTACT -->
-            <div class="contactme section-div">
-                <!-- description -->
-                <div class="row m-0">
-                    <div class="col-12 px-0">
-                        <!-- hoobbies title -->
-                        <div class="px-0">
-                            <h3 class="uppercase contactme-title section-title m-0">CONTACT me</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row contactme-subtitle">
-                    <div class="col-auto px-0">
-                        <p class="m-0">
-                            Feel free to drop me a line, or just save my email for the future <i class="fas fa-heart full-heart"></i>
-                            <i class="far fa-heart outline-heart display-none"></i>
-                            <br>
-                            <a href="mailto:alessandromieli.0901@gmail.com">alessandromieli.0901@gmail.com</a>
-                        </p>
-                    </div>
-                </div>
-                <!-- form -->
-                <form class="needs-validation contactme-form" novalidate action="https://formspree.io/mdolyjpy" method="POST">
-                    <div class="form-row m-0">
-                        <div class="col-md-8 contactme-form-inputs">
-                            <div class="contactme-form-div">
-                                <label for="inputName" class="m-0 contactme-name">Name *</label>
-                                <input name="name" type="text" class="form-control" id="inputName" required class="text-center">
-                                <div class="invalid-feedback">
-                                    Please provide the name.
-                                </div>
-                            </div>
-                            <div class="contactme-form-div">
-                                <label for="inputEmail" class="m-0 contactme-name">Email address *</label>
-                                <input name="_replyto" type="email" class="form-control" id="inputEmail" required>
-                                <div class="invalid-feedback">
-                                    Please provide a valid email address.
-                                </div>
-                            </div>
-                            <div class="contactme-form-div">
-                                <label for="inputMessage" class="m-0 contactme-name">Your message *</label>
-                                <textarea name="message" type="text" class="form-control" id="inputMessage" required></textarea>
-                                <div class="invalid-feedback">
-                                    Your message is required.
-                                </div>
-                            </div>
-                            <input class="contactme-form-btn uppercase" type="submit" value="Send me an email">
-                        </div>
-                        <div class="col-md-4 text-center contactme-form-images">
-                            <!-- <img src="imgs/Andro/6.png" alt=""> -->
-                        </div>
-                    </div>
-                </form>
+            
+
+            <!-- separate space between sections -->
+            <div class="break-sections section-div">
+                <br>
             </div>
 
         </div> <!-- Body end -->
+
+        <!-- back to the top button -->
+        <a class="back-top" href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
 
         <!-- Footer -->
         <footer class="p-5 text-center footer" style="font-size: 1.15rem;">
@@ -219,7 +174,6 @@
 
     </div> <!-- page-container end -->
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -235,30 +189,6 @@
     <script src="script/daylight.js"></script>
     <script src="script/sunRiseSet.js"></script>
     <script src="script/reduce-onscroll.js"></script>
-    <script>
-        // Enable tooltip
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        });
-        // Form validdation
-        (function () {
-            'use strict';
-            window.addEventListener('load', function () {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-    </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163594913-1"></script>
