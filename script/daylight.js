@@ -22,6 +22,9 @@ function invertColor() {
 
     document.getElementsByTagName("head")[0].appendChild(link);
 
+    console.log('nox');
+    
+
     // Invert hobbies images color
     $('.hobbies-img').addClass('display-none');
     $('.hobbies-img-inverted').removeClass('display-none');
@@ -32,6 +35,8 @@ function invertColor() {
 }
 function resetColor() {
     $( "#invertColor" ).remove();
+
+    console.log('lumus');
 
     // Reset hobbies images color
     $('.hobbies-img-inverted').addClass('display-none');

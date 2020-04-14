@@ -5,6 +5,35 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Alessasndro Mieli">
+
+    <!-- Search Engine -->
+    <meta name="description"
+        content="Sono Alessasndro Mieli, questo è il mio curriculum vitae. Sono un ragazzo diplomato in informatica e telecomunicazioni.">
+    <meta name="image" content="https://alessandromieli.ga/imgs/preview-image.png">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Alessasndro Mieli">
+    <meta itemprop="description"
+        content="Sono Alessasndro Mieli, questo è il mio curriculum vitae. Sono un ragazzo diplomato in informatica e telecomunicazioni.">
+    <meta itemprop="image" content="https://alessandromieli.ga/imgs/preview-image.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Alessasndro Mieli">
+    <meta name="twitter:site" content="https://alessandromieli.ga">
+    <meta name="twitter:image" content="https://alessandromieli.ga/imgs/preview-image.png">
+    <meta name="twitter:description"
+        content="Sono Alessasndro Mieli, questo è il mio curriculum vitae. Sono un ragazzo diplomato in informatica e telecomunicazioni.">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:title" content="Alessasndro Mieli">
+    <meta property="og:description"
+        content="Sono Alessasndro Mieli, questo è il mio curriculum vitae. Sono un ragazzo diplomato in informatica e telecomunicazioni.">
+    <meta property="og:image" content="https://alessandromieli.ga/imgs/preview-image.png">
+    <meta property="og:url" content="https://alessandromieli.ga">
+    <meta property="og:site_name" content="Alessasndro Mieli">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:type" content="website">
+
+    <title>Alessandro Mieli</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -24,24 +53,50 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="imgs/A.M.png" type="image/x-icon">
 
-    <title>Alessandro Mieli</title>
+    <!-- Cookies -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
     <!-- Below will appear/disappear the style to invert color theme -->
 </head>
 
 <body>
+    
+    <!-- Cookies -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#363636",
+                    "text": "#ffffff"
+                },
+                "button": {
+                    "background": "#ffffff",
+                    "text": "#363636"
+                }
+            },
+            "theme": "classic",
+            "position": "bottom-right",
+            "content": {
+                "message": "Questo sito utilizza i cookies per migliorare la tua esperienza di navigazione.",
+                "dismiss": "Capito!",
+                "link": "Scopri di più"
+            }
+        });
+    </script>
 
     <!-- Navbar -->
     <div class="navbar-container container-lg px-0">
         <nav class="navbar navbar-expand-lg navbar-light navbar-fix px-lg-0" id="navbar-scroll">
+            
             <!-- Name -->
             <div class="navbar-div">
-                <a class="navbar-brand" href="#"><span class="navbar-title" id="navbar-scroll-title">ALESSANDRO
-                        MIELI</span></a>
+                <a class="navbar-brand" href="javascript:" id="return-to-top-mobile"><span class="navbar-title" id="navbar-scroll-title">ALESSANDRO MIELI</span></a>
                 <br>
                 <!-- subtitle -->
                 <span class="navbar-subtitle text-muted uppercase display-none-lg">Student</span>
             </div>
+
             <!-- Mobile button -->
             <button class="navbar-toggler" type="button">
                 <span class="navbar-toggler-icon" onclick="openNav()"></span>
@@ -52,8 +107,8 @@
                 <a href="javascript:void(0)" class="closebtn pt-3" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
                     <a onclick="closeNav()">Home</a>
-                    <a href="http://www.alessandromieli.ga/">Portfolio</a>
-                    <a href="#contanctme-section" onclick="closeNav()">Contanct</a>
+                    <a href="http://backsoon.ga/">Portfolio</a>
+                    <a href="#contactme-section" onclick="closeNav()">Contanct</a>
                 </div>
             </div>
 
@@ -61,21 +116,23 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#page-top">HOME <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://www.alessandromieli.ga/">PORTFOLIO</a>
+                        <a class="nav-link" href="http://backsoon.ga/">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contanctme-section">CONTACT</a>
+                        <a class="nav-link" href="javascript:" id="contactme-link">CONTACT</a>
                     </li>
                 </ul>
             </div>
+
         </nav>
     </div>
 
     <!-- Body -->
     <div class="container-lg px-0 body">
+
         <!-- About me -->
         <div class="card border-none aboutme section-div">
             <div class="row no-gutters">
@@ -89,9 +146,9 @@
                         <h2 class="card-title mb-lg-5 aboutme-title" style="white-space: pre-wrap;"><strong><em>Hey there</em></strong><span class="aboutme-comma">,</span><strong><br></strong><span class="aboutme-name">I'm Alessandro</span></h2>
                         <p class="card-text aboutme-text">
                             <em>
-                                I’m a student and I love finding solutions to challenges of any types, especially the
-                                programming ones.
-                                I strongly believe in the comunity power, togheter we can change the world.
+                                I’m a student and I love finding solutions to challenges of any types, I am fond of reading.
+                                <br>
+                                If you need to know, my blood type is red and I can't whistle.  
                             </em>
                         </p>
                     </div>
@@ -285,12 +342,12 @@
         </div>
 
         <!-- separate line between sections -->
-        <div class="break-sections section-div">
+        <div class="break-sections section-div" id="contactme-section">
             <hr>
         </div>
 
         <!-- CONTACT -->
-        <div class="contactme section-div" id="contanctme-section">
+        <div class="contactme section-div">
             <!-- description -->
             <div class="row m-0">
                 <div class="col-12 px-0">
@@ -311,26 +368,26 @@
                 </div>
             </div>
             <!-- form -->
-            <form class="needs-validation contactme-form" novalidate>
+            <form class="needs-validation contactme-form" novalidate action="https://formspree.io/mdolyjpy" method="POST">
                 <div class="form-row m-0">
                     <div class="col-md-8 contactme-form-inputs">
                         <div class="contactme-form-div">
                             <label for="inputName" class="m-0 contactme-name">Name *</label>
-                            <input type="text" class="form-control" id="inputName" required class="text-center">
+                            <input name="name" type="text" class="form-control" id="inputName" required class="text-center">
                             <div class="invalid-feedback">
                                 Please provide the name.
                             </div>
                         </div>
                         <div class="contactme-form-div">
                             <label for="inputEmail" class="m-0 contactme-name">Email address *</label>
-                            <input type="email" class="form-control" id="inputEmail" required>
+                            <input name="_replyto" type="email" class="form-control" id="inputEmail" required>
                             <div class="invalid-feedback">
                                 Please provide a valid email address.
                             </div>
                         </div>
                         <div class="contactme-form-div">
                             <label for="inputMessage" class="m-0 contactme-name">Your message *</label>
-                            <textarea type="text" class="form-control" id="inputMessage" required></textarea>
+                            <textarea name="message" type="text" class="form-control" id="inputMessage" required></textarea>
                             <div class="invalid-feedback">
                                 Your message is required.
                             </div>
@@ -338,18 +395,22 @@
                         <input class="contactme-form-btn uppercase" type="submit" value="Send me an email">
                     </div>
                     <div class="col-md-4 text-center contactme-form-images">
-                        <img src="imgs/ThumpsUpCrash.png" alt="">
+                        <!-- <img src="imgs/Andro/6.png" alt=""> -->
                     </div>
                 </div>
             </form>
         </div>
 
-        <!-- separate line between sections -->
+        <!-- separate space between sections -->
         <div class="break-sections section-div">
             <br>
         </div>
 
-    </div> <!-- container end -->
+    </div> <!-- Body end -->
+
+    <!-- back to the top button -->
+    <a class="back-top" href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+
 
     <!-- Footer -->
     <footer class="p-5 text-center footer" style="font-size: 1.15rem;">
@@ -391,12 +452,13 @@
     <script src="script/daylight.js"></script>
     <script src="script/sunRiseSet.js"></script>
     <script src="script/reduce-onscroll.js"></script>
+    <script src="script/back-to-top.js"></script>
     <script>
+        // Enable tooltip
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         });
-    </script>
-    <script>
+        // Form validdation
         (function () {
             'use strict';
             window.addEventListener('load', function () {
@@ -415,6 +477,17 @@
             }, false);
         })();
     </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163594913-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163594913-1');
+    </script>
+
 </body>
 
 </html>

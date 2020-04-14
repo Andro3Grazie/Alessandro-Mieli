@@ -7,6 +7,11 @@
     -webkit-text-fill-color: #000 !important;
 } */
 
+/* ------------------- cookies ------------------- */
+.cc-color-override-183111374 .cc-btn:hover, .cc-color-override-183111374 .cc-btn:focus {
+    color: #363636;
+    opacity: .8;
+}
 /* ------------------- navbar ------------------- */
 .navbar-container {
     background-color: #fff;
@@ -72,6 +77,20 @@ input:focus:not(.contactme-form-btn), textarea:focus {
     color: #fff;
     background-color: #7a002f;
     border-color: #7a002f;
+}
+
+/* ------------------- back to the top button ------------------- */
+#return-to-top {
+    background: rgba(0, 0, 0, 0.7);
+}
+#return-to-top i {
+    color: #fff;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
 }
 
 /* ------------------- footer ------------------- */

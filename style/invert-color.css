@@ -7,6 +7,25 @@
     -webkit-text-fill-color: #fff !important;
 } */
 
+/* ------------------- cookies ------------------- */
+.cc-color-override-183111374.cc-window {
+    color: #000;
+    background-color: rgb(242, 242, 242);
+}
+.cc-color-override-183111374 .cc-btn {
+    color: rgb(242, 242, 242);
+    background-color: #363636;
+    border-color: transparent;
+}
+.cc-color-override-183111374 .cc-btn:hover, .cc-color-override-183111374 .cc-btn:focus {
+    color: rgb(242, 242, 242);
+    background-color: #363636;
+    opacity: .8;
+}
+.cc-color-override-183111374 .cc-link, .cc-color-override-183111374 .cc-link:active, .cc-color-override-183111374 .cc-link:visited {
+    color: #000;
+}
+
 /* ------------------- full page ------------------- */
 body {
     background-color: #2d2d2d!important;
@@ -103,6 +122,20 @@ input:focus:not(.contactme-form-btn), textarea:focus {
 }
 .contactme-form-btn:hover {
     opacity: 1;
+}
+
+/* ------------------- back to the top button ------------------- */
+#return-to-top {
+    background: rgba(242, 242, 242, 0.7);
+}
+#return-to-top i {
+    color: #4d4d4d;
+}
+#return-to-top:hover {
+    background: rgba(242, 242, 242, 0.9);
+}
+#return-to-top:hover i {
+    color: #4d4d4d;
 }
 
 /* ------------------- footer ------------------- */
