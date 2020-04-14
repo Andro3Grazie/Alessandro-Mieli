@@ -1,3 +1,12 @@
+/* removing autocomplete chrome color (doesn't work actually) */
+/* *:-webkit-autofill, 
+*:-webkit-autofill:hover, 
+*:-webkit-autofill:focus, 
+*:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgb(54, 54, 54) inset !important;
+    -webkit-text-fill-color: #fff !important;
+} */
+
 /* ------------------- full page ------------------- */
 body {
     background-color: #2d2d2d!important;
@@ -50,27 +59,51 @@ body {
     color: #f2f2f2;
 }
 
-/* ------- experiences, education, languages and tools, hobbies ------- */
-.experiences-subtitle,  .education-subtitle, .languages-subtitle {
+/* ------- experiences, education, languages and tools, hobbies, contactme ------- */
+.experiences-subtitle,  .education-subtitle, .languages-subtitle, .contactme-subtitle {
     color: #fff;
 }
-.experiences-list-item, .languages-list li p, .tools-div p, .hobbies-name {
+.experiences-list-item, .languages-list li p, .tools-div p, .hobbies-name, .contactme-name {
     color: #f0f0f0;
     background-color: #2d2d2d;
     border-color: #b2b2b2!important;
 }
-.experiences-list-item p a, .education-section a {
+.experiences-list-item p a, .education-section a, .contactme-subtitle a {
     color: #f9f9f9;
     border-bottom-color: rgba(249, 249, 249,.3);
 }
-.experiences-list-item p a:hover, .education-section a:hover {
+.experiences-list-item p a:hover, .education-section a:hover, .contactme-subtitle a:hover {
     color: rgba(249, 249, 249,.6);
     border-color: rgba(249, 249, 249,.15);
 }
 .experiences-date, .education-date {
     color: #efefefcb!important;
 }
-
+/* ------- contactme ------- */
+.contactme-subtitle i {
+    color: #f9f9f9;
+}
+.contactme-form-div input, .contactme-form-div textarea {
+    border-color: #101010;
+    background: rgb(54, 54, 54, .6);
+    color: #fff;
+}
+input:focus:not(.contactme-form-btn), textarea:focus {
+    border-color: #101010!important;
+    background: rgb(54, 54, 54, .6)!important;
+    color: #fff!important;
+    box-shadow: none!important;
+}
+.contactme-form-btn {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+    font-weight: 500;
+    opacity: .8;
+}
+.contactme-form-btn:hover {
+    opacity: 1;
+}
 
 /* ------------------- footer ------------------- */
 .footer {

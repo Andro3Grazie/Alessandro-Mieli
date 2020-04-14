@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <script src="https://kit.fontawesome.com/8c55047497.js" crossorigin="anonymous"></script>
+
+    <!-- My style  -->
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/transform.css">
+    <link rel="stylesheet" href="style/full-page-menu.css">
+    <link rel="stylesheet" href="style/color.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imgs/A.M.png" type="image/x-icon">
+
+    <title>Alessandro Mieli</title>
+
+    <!-- Below will appear/disappear the style to invert color theme -->
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar-container container-lg px-0">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-fix px-lg-0" id="navbar-scroll">
+            <!-- Name -->
+            <div class="navbar-div">
+                <a class="navbar-brand" href="#"><span class="navbar-title" id="navbar-scroll-title">ALESSANDRO
+                        MIELI</span></a>
+                <br>
+                <!-- subtitle -->
+                <span class="navbar-subtitle text-muted uppercase display-none-lg">Student</span>
+            </div>
+            <!-- Mobile button -->
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon" onclick="openNav()"></span>
+            </button>
+
+            <!-- Menu on mobile -->
+            <div id="navbarSupportedContent" class="overlay">
+                <a href="javascript:void(0)" class="closebtn pt-3" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a onclick="closeNav()">Home</a>
+                    <a href="http://www.alessandromieli.ga/">Portfolio</a>
+                    <a href="#contanctme-section" onclick="closeNav()">Contanct</a>
+                </div>
+            </div>
+
+            <!-- Menu on desktop -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.alessandromieli.ga/">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Body -->
+    <div class="container-lg px-0 body">
+
+        <!-- CONTACT -->
+        <div class="contactme section-div" id="contanctme-section">
+            <!-- description -->
+            <div class="row m-0">
+                <div class="col-12 px-0">
+                    <!-- hoobbies title -->
+                    <div class="px-0">
+                        <h3 class="uppercase contactme-title section-title m-0">CONTACT me</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row contactme-subtitle">
+                <div class="col-auto px-0">
+                    <p class="m-0">
+                        Feel free to drop me a line, or just save my email for the future <i class="fas fa-heart full-heart"></i>
+                        <i class="far fa-heart outline-heart display-none"></i>
+                        <br>
+                        <a href="mailto:alessandromieli.0901@gmail.com">alessandromieli.0901@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <!-- form -->
+            <form class="needs-validation contactme-form" novalidate>
+                <div class="form-row m-0">
+                    <div class="col-md-8 contactme-form-inputs">
+                        <div class="contactme-form-div">
+                            <label for="inputName" class="m-0 contactme-name">Name *</label>
+                            <input type="text" class="form-control" id="inputName" required class="text-center">
+                            <div class="invalid-feedback">
+                                Please provide the name.
+                            </div>
+                        </div>
+                        <div class="contactme-form-div">
+                            <label for="inputEmail" class="m-0 contactme-name">Email address *</label>
+                            <input type="email" class="form-control" id="inputEmail" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid email address.
+                            </div>
+                        </div>
+                        <div class="contactme-form-div">
+                            <label for="inputMessage" class="m-0 contactme-name">Your message *</label>
+                            <textarea type="text" class="form-control" id="inputMessage" required></textarea>
+                            <div class="invalid-feedback">
+                                Your message is required.
+                            </div>
+                        </div>
+                        <input class="contactme-form-btn uppercase" type="submit" value="Send me an email">
+                    </div>
+                    <div class="col-md-4 text-center contactme-form-images">
+                        <img src="imgs/ThumpsUpCrash.png" alt="">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- separate line between sections -->
+        <div class="break-sections section-div">
+            <br>
+        </div>
+
+    </div> <!-- container end -->
+
+    <!-- Footer -->
+    <footer class="p-5 text-center footer" style="font-size: 1.15rem;">
+        <!-- Copyright, year and name -->
+        <p class="m-0 pt-3 pb-2">&copy; 2020 Alessandro Mieli</p>
+        <!-- Contanct links -->
+        <ul class="list-inline m-0 pb-3 pt-2 contact-list" style="font-size: 1.4rem;">
+            <li class="list-inline-item contact-icon">
+                <a href="https://www.instagram.com/just_my_useless_username" target="_blank" id="contact-item-a"
+                    class="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li class="list-inline-item contact-icon">
+                <a href="https://twitter.com/addled_username" target="_blank" id="contact-item-b" class="">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="list-inline-item contact-icon">
+                <a href="mailto:alessandromieli.0901@gmail.com" target="_blank" id="contact-item-c" class="">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- My own JavaScript -->
+    <script src="script/functions.js"></script>
+    <script src="script/daylight.js"></script>
+    <script src="script/sunRiseSet.js"></script>
+    <script src="script/reduce-onscroll.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>

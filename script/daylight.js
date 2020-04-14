@@ -25,6 +25,10 @@ function invertColor() {
     // Invert hobbies images color
     $('.hobbies-img').addClass('display-none');
     $('.hobbies-img-inverted').removeClass('display-none');
+
+    // Invert heart 
+    $('.full-heart').addClass('display-none');
+    $('.outline-heart').removeClass('display-none');
 }
 function resetColor() {
     $( "#invertColor" ).remove();
@@ -32,6 +36,10 @@ function resetColor() {
     // Reset hobbies images color
     $('.hobbies-img-inverted').addClass('display-none');
     $('.hobbies-img').removeClass('display-none');
+
+    // Reset heart 
+    $('.full-heart').removeClass('display-none');
+    $('.outline-heart').addClass('display-none');
 }
 function chekTheme() {
     if (checkTime()) {

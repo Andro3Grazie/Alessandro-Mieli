@@ -53,7 +53,7 @@
                 <div class="overlay-content">
                     <a onclick="closeNav()">Home</a>
                     <a href="http://www.alessandromieli.ga/">Portfolio</a>
-                    <a href="http://www.alessandromieli.ga/">Contanct</a>
+                    <a href="#contanctme-section" onclick="closeNav()">Contanct</a>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                         <a class="nav-link" href="http://www.alessandromieli.ga/">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://www.alessandromieli.ga/">CONTACT</a>
+                        <a class="nav-link" href="#contanctme-section">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -179,17 +179,17 @@
                     <p class="col-md-6 m-0 education-section">
                         <strong class="uppercase education-subtitle">Diploma in computer science</strong>
                         <br>
-                        IIS Federico Caffè, Roma (<em class="education-date">This year I'm going to graduate</em>)
+                        IIS Federico Caffè, Rome (<em class="education-date">This year I'm going to graduate</em>)
                     </p>
                     <p class="col-md-6 m-0 education-section">
                         <strong class="uppercase education-subtitle">Cryptography masterclass</strong>
                         <br>
-                        Università degli studi Roma Tre, Roma <em class="education-date">March 2020</em>
+                        Università degli studi Roma Tre, Rome - <span class="education-date">March 2020</span>
                     </p>
                     <p class="col-md-6 m-0 education-section">
                         <strong class="uppercase education-subtitle">International masterclass on particle physics</strong>
                         <br>
-                        <a href="https://www.physicsmasterclasses.org/" target="_blank"><span data-toggle="tooltip" data-placement="bottom" title="Istituto Nazionale di Fisica Nucleare">INFN</span></a>, Roma <em class="education-date">March 2019</em>
+                        <a href="https://www.physicsmasterclasses.org/" target="_blank"><span data-toggle="tooltip" data-placement="bottom" title="Istituto Nazionale di Fisica Nucleare">INFN</span></a>, Rome - <span class="education-date">March 2019</span>
                     </p>
                 </div>
             </div>
@@ -214,7 +214,7 @@
                                 <p class="m-0"><strong class="languages-subtitle">English</strong> <em>· </em>Fluent</p>
                             </li>
                             <li>
-                                <p class="m-0"><strong class="languages-subtitle">Italiano</strong> <em>· </em>Native</p>
+                                <p class="m-0"><strong class="languages-subtitle">Italian</strong> <em>· </em>Native</p>
                             </li>
                         </ul>
                     </div>
@@ -290,11 +290,69 @@
         </div>
 
         <!-- CONTACT -->
+        <div class="contactme section-div" id="contanctme-section">
+            <!-- description -->
+            <div class="row m-0">
+                <div class="col-12 px-0">
+                    <!-- hoobbies title -->
+                    <div class="px-0">
+                        <h3 class="uppercase contactme-title section-title m-0">CONTACT me</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row contactme-subtitle">
+                <div class="col-auto px-0">
+                    <p class="m-0">
+                        Feel free to drop me a line, or just save my email for the future <i class="fas fa-heart full-heart"></i>
+                        <i class="far fa-heart outline-heart display-none"></i>
+                        <br>
+                        <a href="mailto:alessandromieli.0901@gmail.com">alessandromieli.0901@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <!-- form -->
+            <form class="needs-validation contactme-form" novalidate>
+                <div class="form-row m-0">
+                    <div class="col-md-8 contactme-form-inputs">
+                        <div class="contactme-form-div">
+                            <label for="inputName" class="m-0 contactme-name">Name *</label>
+                            <input type="text" class="form-control" id="inputName" required class="text-center">
+                            <div class="invalid-feedback">
+                                Please provide the name.
+                            </div>
+                        </div>
+                        <div class="contactme-form-div">
+                            <label for="inputEmail" class="m-0 contactme-name">Email address *</label>
+                            <input type="email" class="form-control" id="inputEmail" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid email address.
+                            </div>
+                        </div>
+                        <div class="contactme-form-div">
+                            <label for="inputMessage" class="m-0 contactme-name">Your message *</label>
+                            <textarea type="text" class="form-control" id="inputMessage" required></textarea>
+                            <div class="invalid-feedback">
+                                Your message is required.
+                            </div>
+                        </div>
+                        <input class="contactme-form-btn uppercase" type="submit" value="Send me an email">
+                    </div>
+                    <div class="col-md-4 text-center contactme-form-images">
+                        <img src="imgs/ThumpsUpCrash.png" alt="">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- separate line between sections -->
+        <div class="break-sections section-div">
+            <br>
+        </div>
 
     </div> <!-- container end -->
 
     <!-- Footer -->
-    <footer class="mt-5 p-5 text-center footer" style="font-size: 1.15rem;">
+    <footer class="p-5 text-center footer" style="font-size: 1.15rem;">
         <!-- Copyright, year and name -->
         <p class="m-0 pt-3 pb-2">&copy; 2020 Alessandro Mieli</p>
         <!-- Contanct links -->
@@ -337,6 +395,25 @@
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         });
+    </script>
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
     </script>
 </body>
 
