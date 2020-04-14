@@ -2,13 +2,5 @@ Todo:
   - change language based on ip locatio (adobe.com)
   - disable autocomplete css modification
 Done:
-  - adding share meta link
-  - adding search engine meta
-  - little meta fixes (author)
-  - cookies button
-  - Scroll to the top button
-  - scroll to contact me button
-  - sitemap.xml
-  - robots.txt
-  - About me section (edited the sentence)
-  - contact me (logic part)
+  - share name correction
+  - fixing navbar links
