@@ -6,18 +6,25 @@
     -webkit-box-shadow: 0 0 0 30px rgb(242, 242, 242) inset !important;
     -webkit-text-fill-color: #000 !important;
 } */
-
+                  
 /* ------------------- cookies ------------------- */
 .cc-color-override-183111374 .cc-btn:hover, .cc-color-override-183111374 .cc-btn:focus {
     color: #363636;
     opacity: .8;
+}
+.link {
+    color: #7a002f;
+    border-bottom-color: rgba(122, 0, 47,.3);
+}
+.link:hover {
+    color: rgba(122, 0, 47,.6);
+    border-color: rgba(122, 0, 47,.15);
 }
 /* ------------------- navbar ------------------- */
 .navbar-container {
     background-color: #fff;
     color: #4d4d4d;
 }
-
 
 /* ------------------- body ------------------- */
 .section-title {
@@ -30,10 +37,7 @@
     background-color: #e6e6e6;
 }
 
-/* ------- about me ------- */
-.aboutme-div {
-    color: #7a002f;
-}
+
 /* title and description */
 .aboutme-text {
     color: #000;
@@ -55,11 +59,14 @@
     border-color: rgba(122, 0, 47,.15);
 }
 
+/* ------- about me ------- */
+.aboutme-div,
 /* ------- contactme ------- */
-.contactme-subtitle i {
-    color: #7a002f;
-}
-.contactme-subtitle a {
+.contactme-subtitle i,
+.contactme-subtitle a,
+/* ------- modal ------- */
+.changeLanTitle i
+{
     color: #7a002f;
 }
 .contactme-form-div input, .contactme-form-div textarea {
@@ -78,7 +85,22 @@ input:focus:not(.contactme-form-btn), textarea:focus {
     background-color: #7a002f;
     border-color: #7a002f;
 }
-
+.changeLanButtonEn {
+    color: #fff;
+    background-color: #7a002f!important;
+    border-color: #7a002f!important;
+}
+.changeLanButtonIt {
+    color: rgb(255, 255, 255)!important;
+    background-color: rgb(54, 54, 54)!important;
+    border-color: rgb(54, 54, 54)!important;
+}
+.changeLanButton:hover {
+    color: rgb(255, 255, 255);
+}
+.changeLanClose {
+    color: rgb(54, 54, 54)!important;
+}
 /* ------------------- back to the top button ------------------- */
 #return-to-top {
     background: rgba(0, 0, 0, 0.7);

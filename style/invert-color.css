@@ -1,3 +1,7 @@
+/* -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------- (Temporarily Discontinued) --------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
 /* removing autocomplete chrome color (doesn't work actually) */
 /* *:-webkit-autofill, 
 *:-webkit-autofill:hover, 
@@ -6,44 +10,61 @@
     -webkit-box-shadow: 0 0 0 30px rgb(54, 54, 54) inset !important;
     -webkit-text-fill-color: #fff !important;
 } */
-
 /* ------------------- cookies ------------------- */
 .cc-color-override-183111374.cc-window {
     color: #000;
     background-color: rgb(242, 242, 242);
 }
-.cc-color-override-183111374 .cc-btn {
+.cc-color-override-183111374 .cc-btn, 
+.cc-color-override-183111374 .cc-btn:hover, 
+.cc-color-override-183111374 .cc-btn:focus {
     color: rgb(242, 242, 242);
     background-color: #363636;
     border-color: transparent;
 }
-.cc-color-override-183111374 .cc-btn:hover, .cc-color-override-183111374 .cc-btn:focus {
-    color: rgb(242, 242, 242);
-    background-color: #363636;
+.cc-color-override-183111374 .cc-btn:hover, 
+.cc-color-override-183111374 .cc-btn:focus {
     opacity: .8;
 }
-.cc-color-override-183111374 .cc-link, .cc-color-override-183111374 .cc-link:active, .cc-color-override-183111374 .cc-link:visited {
+.cc-color-override-183111374 .cc-link, 
+.cc-color-override-183111374 .cc-link:active, 
+.cc-color-override-183111374 .cc-link:visited {
     color: #000;
 }
 
-/* ------------------- full page ------------------- */
-body {
-    background-color: #2d2d2d!important;
-    color: #fff!important;
+/* ------------------- bg #2d2d2d ------------------- */
+body, .navbar, .aboutme, .contactme-name, .experiences-list-item {
+    background-color: #fff;
+    animation: changeBgColor 2.5s;
+    -webkit-animation: changeBgColor 2.5s;
+    animation-fill-mode: forwards;
 }
-
+/* ------------------- color #fff ------------------- */
+.navbar-container, .section-title, .aboutme-div, .experiences-subtitle, .education-subtitle, .education-section, .languages-subtitle, .contactme-subtitle {
+    color: #212529;
+    animation: changeTextColor 2.5s;
+    -webkit-animation: changeTextColor 2.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes changeBgColor { 
+    100% {
+        background: #2d2d2d;
+    } 
+}
+@keyframes changeTextColor { 
+    100% { 
+        color: #fff;
+    } 
+}
 
 /* ------------------- navbar ------------------- */
-.navbar-container {
-    background-color: #2d2d2d!important;
-    color: #fff!important;
-}
 /* menu on desktop, subtitle */
 .navbar-light .navbar-nav .nav-link, .navbar-subtitle {
     color: rgba(255, 255, 255, .5)!important;
 }
 /* name, home link */
-.navbar-light .navbar-brand, .navbar-light .navbar-nav .active>.nav-link {
+.navbar-light .navbar-brand, 
+.navbar-light .navbar-nav .active > .nav-link {
     color: rgba(255, 255, 255, .9)!important;
 }
 /* full-page-menu */
@@ -56,58 +77,65 @@ body {
 
 
 /* ------------------- body ------------------- */
-.section-title {
-    color: #fff!important;
-}
-
 /* ------- separate line between sections ------- */
 .break-sections hr {
     color: #b2b2b2;
     background-color: #b2b2b2;
 }
-
 /* ------- about me ------- */
-.aboutme {
-    background-color: #2d2d2d;
-}
-.aboutme-div {
-    color: #fff;
-}
 /* title and description */
 .aboutme-text {
     color: #f2f2f2;
 }
 
-/* ------- experiences, education, languages and tools, hobbies, contactme ------- */
-.experiences-subtitle,  .education-subtitle, .languages-subtitle, .contactme-subtitle {
-    color: #fff;
-}
-.experiences-list-item, .languages-list li p, .tools-div p, .hobbies-name, .contactme-name {
+/* ------- experiences ------- */
+.experiences-list-item,
+/* ------- languages and tools ------- */
+.languages-list li p,
+.tools-div p,
+/* ------- tools ------- */
+.hobbies-name,
+/* ------- contactme ------- */
+.contactme-name {
     color: #f0f0f0;
-    background-color: #2d2d2d;
     border-color: #b2b2b2!important;
 }
-.experiences-list-item p a, .education-section a, .contactme-subtitle a {
+/* ------- experiences ------- */
+.experiences-list-item p a,
+/* ------- education ------- */
+.education-section a,
+/* ------- contactme ------- */
+.contactme-subtitle a {
     color: #f9f9f9;
     border-bottom-color: rgba(249, 249, 249,.3);
 }
-.experiences-list-item p a:hover, .education-section a:hover, .contactme-subtitle a:hover {
+/* ------- experiences ------- */
+.experiences-list-item p a:hover,
+/* ------- education ------- */
+.education-section a:hover,
+/* ------- contactme ------- */
+.contactme-subtitle a:hover {
     color: rgba(249, 249, 249,.6);
     border-color: rgba(249, 249, 249,.15);
 }
-.experiences-date, .education-date {
+/* ------- experiences ------- */
+.experiences-date,
+/* ------- education ------- */
+.education-date {
     color: #efefefcb!important;
 }
 /* ------- contactme ------- */
-.contactme-subtitle i {
+.contactme-subtitle i, .contactme-subtitle a {
     color: #f9f9f9;
 }
-.contactme-form-div input, .contactme-form-div textarea {
+.contactme-form-div input, 
+.contactme-form-div textarea {
     border-color: #101010;
     background: rgb(54, 54, 54, .6);
     color: #fff;
 }
-input:focus:not(.contactme-form-btn), textarea:focus {
+input:focus:not(.contactme-form-btn), 
+textarea:focus {
     border-color: #101010!important;
     background: rgb(54, 54, 54, .6)!important;
     color: #fff!important;
@@ -123,6 +151,7 @@ input:focus:not(.contactme-form-btn), textarea:focus {
 .contactme-form-btn:hover {
     opacity: 1;
 }
+/* ------- contactme end ------- */
 
 /* ------------------- back to the top button ------------------- */
 #return-to-top {
@@ -140,8 +169,9 @@ input:focus:not(.contactme-form-btn), textarea:focus {
 
 /* ------------------- footer ------------------- */
 .footer {
-    background-color: #363636;
-    color: rgba(255, 255, 255, .9)!important;
+    animation: changeFooterColor 2.5s;
+    -webkit-animation: changeFooterColor 2.5s;
+    animation-fill-mode: forwards;
 }
 /* contanct links */
 .contact-icon a {
@@ -150,16 +180,23 @@ input:focus:not(.contactme-form-btn), textarea:focus {
 .contact-item-hover {
     color: rgba(255, 255, 255, 0.3)!important;
 }
-
+@keyframes changeFooterColor {
+    100% {
+        background-color: #363636;
+        color: rgba(255, 255, 255, .9);
+    }
+}
 
 /* ------------------- media query ------------------- */
 /* large tablet */
 @media screen and (max-width: 992px) {
 /* ------------------- navbar ------------------- */
-    /* navbar, mobile button */
-    .navbar-container,  .navbar-light .navbar-toggler {
-        background-color: #363636!important;
-        border-color: #363636!important;
+    /* navbar */
+    .navbar-container,
+    /* mobile button */
+    .navbar-light .navbar-toggler {
+        background-color: #363636;
+        border-color: #363636;
     }
     .navbar-light .navbar-toggler .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -167,7 +204,15 @@ input:focus:not(.contactme-form-btn), textarea:focus {
     /* navbar fixed-top */
     .navbar-fix {
         background-color: #363636!important;
-        border-color: #363636!important;
+        /* border-color: #363636!important; */
+        animation: changeBgColorMb 2.5s;
+        -webkit-animation: changeBgColorMb 2.5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes changeBgColorMb { 
+        100% {
+            background-color: #363636!important;
+        } 
     }
 }
 /* tablet */

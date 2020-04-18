@@ -1,8 +1,8 @@
 Todo:
+  - disable autocomplete css modification color
+  Done:
+  - general fixes
+  - it/index - contact - portfolio
   - change language based on ip locatio (adobe.com)
-  - disable autocomplete css modification
-Done:
-  - contact separate page
-  - footer fixing bottom
   - share name correction
   - fixing navbar links

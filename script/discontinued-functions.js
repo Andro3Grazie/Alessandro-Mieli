@@ -1,29 +1,26 @@
-var alba;
-var tramonto; 
-var darkMode = false;
-
-function checkTime() {
-    currentDate = Math.round(new Date().getTime()/1000);
-    
-    if (currentDate >= tramonto || currentDate <= alba) {
-        // Nighttime
-        return true;
-    }
-    else {
-        // Daylight
-        return false;
-    }
-}
+/* --------------------
+add stylesheet to invert page's colour (functions)
+---------------------*/
 function invertColor() {
     var link = document.createElement( "link" );
     link.rel = "stylesheet";
-    link.href = "style/invert-color.css";
+    link.href = "/style/invert-color.css";
     link.id = "invertColor";
 
     document.getElementsByTagName("head")[0].appendChild(link);
 
-    console.log('nox');
-    
+    $('#lumusCss').remove();
+    $('#lumus').addClass('display-none');
+
+    var link = document.createElement( "link" );
+    link.rel = "stylesheet";
+    link.href = "/style/nox.css";
+    link.id = "noxCss";
+
+    document.getElementsByTagName("head")[0].appendChild(link);
+
+    // Nox letters
+    $('#nox').removeClass('display-none');
 
     // Invert hobbies images color
     $('.hobbies-img').addClass('display-none');
@@ -33,10 +30,24 @@ function invertColor() {
     $('.full-heart').addClass('display-none');
     $('.outline-heart').removeClass('display-none');
 }
+
+/* --------------------
+remove stylesheet to reset page's colour (functions)
+---------------------*/
 function resetColor() {
     $( "#invertColor" ).remove();
+    $('#noxCss').remove();
+    $('#nox').addClass('display-none');
 
-    console.log('lumus');
+    var link = document.createElement( "link" );
+    link.rel = "stylesheet";
+    link.href = "/style/lumus.css";
+    link.id = "lumusCss";
+
+    document.getElementsByTagName("head")[0].appendChild(link);
+
+    // Nox letters
+    $('#lumus').removeClass('display-none');
 
     // Reset hobbies images color
     $('.hobbies-img-inverted').addClass('display-none');
@@ -46,6 +57,11 @@ function resetColor() {
     $('.full-heart').removeClass('display-none');
     $('.outline-heart').addClass('display-none');
 }
+
+/* --------------------
+Check the page's color
+---------------------*/ 
+// (daylight.js)
 function chekTheme() {
     if (checkTime()) {
         // Nighttime
@@ -57,7 +73,7 @@ function chekTheme() {
     else {
         // Daylight
         if (darkMode) {
-            resetColor();
+            // resetColor();
             darkMode = false;
         }
     }

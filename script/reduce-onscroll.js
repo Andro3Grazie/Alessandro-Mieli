@@ -1,9 +1,3 @@
-var pc = "(min-width: 993px)";
-var largeTablet = "(max-width: 992px)";
-var tablet = "(max-width: 768px)";
-var smartphone = "(max-width: 576px)";
-var smallSmartphone = "(max-width: 343px)";
-
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
