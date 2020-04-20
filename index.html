@@ -53,16 +53,11 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="imgs/A.M.png" type="image/x-icon">
 
-    <!-- Cookies -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-
-    <!-- (Temporarily Discontinued) -->
-    <!-- Below will appear/disappear the style to invert color theme -->
 </head>
 
 <body>
 
-    <!-- Modal -->
+    <!-- Modal Change websitte -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -81,36 +76,12 @@
                     Are you visiting this website from Italy? Visit your language site for more detailed information.
                 </div>
                 <div class="modal-footer border-none m-auto pt-0">
-                    <a type="button" class="changeLanButton changeLanButtonIt mx-auto" href="https://it.alessandromieli.ga" onclick="setCookie('language', 'it');">Continua in italiano</a>
-                    <button type="button" class="changeLanButton changeLanButtonEn mx-auto" data-dismiss="modal" onclick="setCookie('language', 'en');">Continue in english</button>
+                    <a type="button" class="changeLanButton changeLanButtonIt mx-auto" href="https://it.alessandromieli.ga">Continua in italiano</a>
+                    <button type="button" class="changeLanButton changeLanButtonEn mx-auto" data-dismiss="modal">Continue in english</button>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Cookies -->
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-    <script>
-        window.cookieconsent.initialise({
-            "palette": {
-                "popup": {
-                    "background": "#363636",
-                    "text": "#ffffff"
-                },
-                "button": {
-                    "background": "#ffffff",
-                    "text": "#363636"
-                }
-            },
-            "theme": "classic",
-            "position": "bottom-right",
-            "content": {
-                "message": "This website uses cookies to ensure you get the best experience on my website.",
-                "link": "Learn more"
-            },
-            "type": "opt-out"
-        });
-    </script>
 
     <!-- Page -->
     <div class="page-container">
@@ -127,18 +98,6 @@
                     <span class="navbar-subtitle text-muted uppercase display-none-lg">Student</span>
                 </div>
                 
-                <!-- HP -->
-                <!-- (Temporarily Discontinued) -->
-                <!-- <div class="navbar-div">
-                    <div class="words center display-none" id="nox" style="color: #fff">
-                        <span>N</span><span>O</span><span>X</span>
-                    </div>
-                    
-                    <div class="words center display-none" id="lumus" style="color: #2d2d2d">
-                        <span>L</span><span>U</span><span>M</span><span>U</span><span>S</span>
-                    </div>
-                </div> -->
-
                 <!-- Mobile button -->
                 <button class="navbar-toggler" type="button">
                     <span class="navbar-toggler-icon" onclick="openNav()"></span>
@@ -499,7 +458,6 @@
 
     <!-- My own JavaScript -->
     <script src="script/functions.js"></script>
-    <script src="script/ipInfo.js"></script>
     <script src="script/reduce-onscroll.js"></script>
 
     <script>
@@ -526,11 +484,8 @@
             }, false);
         })();
         // Modal
-        function checkLan(country) {
-            // Check if language preference is saved in cookies
-            var lan = getCookie("language");
-            
-            if(!lan && country == 'IT' && getCookie('cookieconsent_status') == 'allow') {                
+        function changeLanSite(countryName) {
+            if(countryName != 'IT') {                
                 // Launch modal to change language
                 $('#myModal').modal('toggle');
             }

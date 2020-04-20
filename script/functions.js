@@ -1,13 +1,17 @@
 /* -------------------- Variables -------------------- */
-// var alba;
-// var tramonto;
-// var darkMode = false;
 var pc = "(min-width: 993px)";
 var largeTablet = "(max-width: 992px)";
 var tablet = "(max-width: 768px)";
 var smartphone = "(max-width: 576px)";
 var smallSmartphone = "(max-width: 343px)";
-var oldCookie;
+
+/* -------------------- Window on load -------------------- */
+window.onload = function () {
+    $.getJSON("https://ipinfo.io/geo", function (data) {
+        // Get country name -> IT
+        changeLanSite(data.country);
+    });
+};
 
 /* -------------------- Open/Close navbar on mobile -------------------- */
 function openNav() {
@@ -61,38 +65,4 @@ $('#contactme-link').click(function () {
     el.scrollIntoView({ behavior: 'smooth' });
 });
 
-/* -------------------- Cookies -------------------- */
-function setCookie(cName, language) {
-    expireDate = new Date().toUTCString();
-    var year = new Date().getFullYear();
-    document.cookie = cName + "=" + language + ";expires=" + expireDate.replace(year, year + 1) + ";path=/";
-}
-function getCookie(cName) {
-    var name = cName + "=";
-    var ca = document.cookie.split(';');
-
-    for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return false;
-}
-function deleteCookies(cName) {
-    document.cookie = cName + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-}
-
-/* -------------------- Allow / Deny cookies -------------------- */
-$('.cc-deny').click(function denyCookie() {
-    // Deny cookie
-    deleteCookies('language');
-});
-$('.cc-allow').click(function denyCookie() {
-    // allow cookie
-    checkLan(country);
-});
 

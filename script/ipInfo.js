@@ -1,22 +1,36 @@
 window.onload = function () {
 
-    $.getJSON("https://ipinfo.io/geo", function (data) {
+    // Check if language preference is saved in cookies
+    lan = getCookie("language");
+    oldCookie = getCookie('cookieconsent_status');
     
-        var country = data.country; // Get country name
+    if (getCookie('askeMe') != 'false' && lan == 'it') {
+        $('#modalLan').modal('toggle');
+    }
 
-        oldCookie = getCookie('cookieconsent_status');
+    // $.getJSON("https://ipinfo.io/geo", function (data) {        
+    
+        // var country = data.country; // Get country name
 
+        var country = "IT";
+        
         var x = this.setInterval(function() { // every seconds check if cookies status has change
-            if(getCookie('cookieconsent_status') != oldCookie) {
+                    
+            if(getCookie('cookieconsent_status') != oldCookie && getCookie('cookieconsent_status') != false) {
+                
                 oldCookie = getCookie('cookieconsent_status'); // Change the old variable with the new one
+
+                console.log('cookie change to: ' + oldCookie);
+                    
                 if(oldCookie == 'deny') { // delete cookie
                     deleteCookies('language');
                 }
+                
                 if(oldCookie == 'allow') { // Add cookie
                     checkLan(country);
                 }
             }
-        }, 1000);
+        }, 100);
 
         // checkCountry(country);
 
@@ -42,5 +56,5 @@ window.onload = function () {
             }, 60000);
         });
         */
-    });
+    // });
 };
