@@ -1,22 +1,22 @@
 window.onload = function () {
 
-    oldCookie = getCookie('cookieconsent_status');
-
-    var x = this.setInterval(function() {
-        if(getCookie('cookieconsent_status') != oldCookie) {
-            oldCookie = getCookie('cookieconsent_status');
-            if(oldCookie == 'deny') {
-                deleteCookies('language');
-            }
-        }
-    }, 1000);
-
-
     $.getJSON("https://ipinfo.io/geo", function (data) {
+    
+        var country = data.country; // Get country name
 
-        // Get country name
-        var country = data.country;
-        checkLan(country);
+        oldCookie = getCookie('cookieconsent_status');
+
+        var x = this.setInterval(function() { // every seconds check if cookies status has change
+            if(getCookie('cookieconsent_status') != oldCookie) {
+                oldCookie = getCookie('cookieconsent_status'); // Change the old variable with the new one
+                if(oldCookie == 'deny') { // delete cookie
+                    deleteCookies('language');
+                }
+                if(oldCookie == 'allow') { // Add cookie
+                    checkLan(country);
+                }
+            }
+        }, 1000);
 
         // checkCountry(country);
 
