@@ -9,21 +9,6 @@ var smartphone = "(max-width: 576px)";
 var smallSmartphone = "(max-width: 343px)";
 var oldCookie;
 
-/* -------------------- Daylight or Nighttime -------------------- */
-// (Temporarily Discontinued)
-function checkTime() {
-    currentDate = Math.round(new Date().getTime() / 1000);
-
-    if (currentDate >= alba || currentDate <= tramonto) {
-        // Daylight
-        return true;
-    }
-    else {
-        // Nighttime
-        return false;
-    }
-}
-
 /* -------------------- Open/Close navbar on mobile -------------------- */
 function openNav() {
     document.getElementById("navbarSupportedContent").style.width = "100%";

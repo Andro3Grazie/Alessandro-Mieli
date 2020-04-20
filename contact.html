@@ -105,10 +105,10 @@
             "theme": "classic",
             "position": "bottom-right",
             "content": {
-                "message": "This website uses cookies to ensure you get the best experience on our website.",
-                "dismiss": "Got it!",
+                "message": "This website uses cookies to ensure you get the best experience on my website.",
                 "link": "Learn more"
-            }
+            },
+            "type": "opt-out"
         });
     </script>
 
@@ -286,8 +286,8 @@
         function checkLan(country) {
             // Check if language preference is saved in cookies
             var lan = getCookie("language");
-
-            if (!lan && country == 'IT') {
+            
+            if(!lan && country == 'IT' && getCookie('cookieconsent_status') == 'allow') {                
                 // Launch modal to change language
                 $('#myModal').modal('toggle');
             }
