@@ -5,7 +5,7 @@ window.onload = function () {
         var country = data.country;
         checkLan(country);
 
-        checkCountry(country);
+        //checkCountry(country);
 
         
         /* (Temporarily Discontinued)
