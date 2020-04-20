@@ -290,7 +290,7 @@
             // Check if language preference is saved in cookies
             var lan = getCookie("language");
 
-            if (!lan && country == 'IT') {
+            if (!lan && country != 'IT') {
                 // Launch modal to change language
                 $('#myModal').modal('toggle');
             }
