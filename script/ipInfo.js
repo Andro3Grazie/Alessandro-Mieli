@@ -3,7 +3,9 @@ window.onload = function () {
 
         // Get country name
         var country = data.country;
-        chekCountry(country);
+        checkLan(country);
+
+        checkCountry(country);
 
         
         /* (Temporarily Discontinued)

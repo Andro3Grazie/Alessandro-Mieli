@@ -81,8 +81,8 @@
                     Are you visiting this website from Italy? Visit your language site for more detailed information.
                 </div>
                 <div class="modal-footer border-none m-auto pt-0">
-                    <a type="button" class="changeLanButton changeLanButtonIt mx-auto" href="it/contact.html">Continua in italiano</a>
-                    <button type="button" class="changeLanButton changeLanButtonEn mx-auto" data-dismiss="modal">Continue in english</button>
+                    <a type="button" class="changeLanButton changeLanButtonIt mx-auto" href="it/contact.html" onclick="setCookie('language', 'it');">Continua in italiano</a>
+                    <button type="button" class="changeLanButton changeLanButtonEn mx-auto" data-dismiss="modal" onclick="setCookie('language', 'en');">Continue in english</button>
                 </div>
             </div>
         </div>
@@ -295,8 +295,11 @@
             }, false);
         })();
         // Modal
-        function chekCountry(country) {
-            if (country == "IT") {
+        function checkLan(country) {
+            // Check if language preference is saved in cookies
+            var lan = getCookie("language");
+
+            if (!lan && country == 'IT') {
                 // Launch modal to change language
                 $('#myModal').modal('toggle');
             }

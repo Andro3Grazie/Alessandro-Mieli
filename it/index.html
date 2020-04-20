@@ -81,8 +81,8 @@
                     Stai visitando questo sito fuori dall'Italia, visitalo nella tua lingua per informazioni più precise e dettagliate.
                 </div>
                 <div class="modal-footer border-none m-auto pt-0">
-                    <a type="button" class="changeLanButton changeLanButtonIt mx-auto" href="../index.html">Continue in english</a>
-                    <button type="button" class="changeLanButton changeLanButtonEn mx-auto" data-dismiss="modal">Continua in italiano</button>
+                    <a type="button" class="changeLanButton changeLanButtonIt mx-auto" href="../index.html" onclick="setCookie('language', 'it');">Continue in english</a>
+                    <button type="button" class="changeLanButton changeLanButtonEn mx-auto" data-dismiss="modal" onclick="setCookie('language', 'en');">Continua in italiano</button>
                 </div>
             </div>
         </div>
@@ -526,12 +526,15 @@
             }, false);
         })();
         // Modal
-        function chekCountry(country) {
-            if (country != "IT") {
-                // Launch modal to change language
-                $('#myModal').modal('toggle');
+            function checkLan(country) {
+                // Check if language preference is saved in cookies
+                var lan = getCookie("language");
+
+                if (!lan && country == 'IT') {
+                    // Launch modal to change language
+                    $('#myModal').modal('toggle');
+                }
             }
-        }
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

@@ -26,9 +26,11 @@ function checkTime() {
 /* -------------------- Open/Close navbar on mobile -------------------- */
 function openNav() {
     document.getElementById("navbarSupportedContent").style.width = "100%";
+    $('body').addClass('overflow-none');
 }
 function closeNav() {
     document.getElementById("navbarSupportedContent").style.width = "0";
+    $('body').removeClass('overflow-none');
 }
 
 /* -------------------- Change color on contact link hover -------------------- */
@@ -72,3 +74,23 @@ $('#contactme-link').click(function() {
     // scroll to element
     el.scrollIntoView({ behavior: 'smooth' });
 });
+
+/* -------------------- Cookies -------------------- */
+function setCookie(cName, language) {
+    document.cookie = cName + "=" + language + ";path=/";
+}
+function getCookie(cName) {
+    var name = cName + "=";
+    var ca = document.cookie.split(';');
+    
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {            
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {            
+            return c.substring(name.length, c.length);
+        }
+    }
+    return false;
+}

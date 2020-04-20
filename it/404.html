@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <!-- Required meta tags -->
@@ -162,7 +162,7 @@
             <div class="error-404 no-select">
                 <h1 class="title">4<span class="title-zero">0</span>4</h1>
                 <h4 class="subtitle uppercase">Questa pagina non è disponibile</h4>
-                <p class="mt-4">Torna alla <a class="link" href="index.html">home</a></p>
+                <p class="mt-4">Torna alla <a class="link" href="https://alessandromieli.ga/it/index.html">home</a></p>
             </div>
         </div> <!-- Body end -->
 
@@ -205,7 +205,7 @@
         crossorigin="anonymous"></script>
 
     <!-- My own JavaScript -->
-    <script src="../script/functions.js"></script>
+    <script src="https://alessandromieli.ga/script/functions.js"></script>
 
     <script>
         $('.title-zero').hover(function () {
@@ -220,6 +220,12 @@
                 }, 1500);
             }
         }
+
+        $window.onload(function change() {
+            if (checkCountry(country) == 'en') {
+                // Replace url and go to italian 404
+            }
+        });
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
