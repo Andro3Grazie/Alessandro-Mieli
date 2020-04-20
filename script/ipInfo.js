@@ -1,4 +1,17 @@
 window.onload = function () {
+
+    oldCookie = getCookie('cookieconsent_status');
+
+    var x = this.setInterval(function() {
+        if(getCookie('cookieconsent_status') != oldCookie) {
+            oldCookie = getCookie('cookieconsent_status');
+            if(oldCookie == 'deny') {
+                deleteCookies('language');
+            }
+        }
+    }, 1000);
+
+
     $.getJSON("https://ipinfo.io/geo", function (data) {
 
         // Get country name
