@@ -33,19 +33,18 @@ $(document).ready(function () {
     $('#contact-item-b').hover(function () { //Hover Linkedin
         $('#contact-item-a').toggleClass('contact-item-hover');
         $('#contact-item-c').toggleClass('contact-item-hover');
-//         $('#contact-item-d').toggleClass('contact-item-hover');
+        $('#contact-item-d').toggleClass('contact-item-hover');
     }),
     $('#contact-item-c').hover(function () { //Hover globe
         $('#contact-item-a').toggleClass('contact-item-hover');
         $('#contact-item-b').toggleClass('contact-item-hover');
-//         $('#contact-item-d').toggleClass('contact-item-hover');
-    });
-        /*
+        $('#contact-item-d').toggleClass('contact-item-hover');
+    }),
     $('#contact-item-d').hover(function () { //Hover Amazon ref
         $('#contact-item-a').toggleClass('contact-item-hover');
         $('#contact-item-b').toggleClass('contact-item-hover');
         $('#contact-item-c').toggleClass('contact-item-hover');
-    }); */
+    });
 });
 
 /* -------------------- Scroll to Top Button -------------------- */
