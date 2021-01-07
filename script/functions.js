@@ -39,12 +39,12 @@ $(document).ready(function () {
         $('#contact-item-a').toggleClass('contact-item-hover');
         $('#contact-item-b').toggleClass('contact-item-hover');
         $('#contact-item-d').toggleClass('contact-item-hover');
-    });
+    }),
     $('#contact-item-d').hover(function () {
             $('#contact-item-a').toggleClass('contact-item-hover');
             $('#contact-item-b').toggleClass('contact-item-hover');
             $('#contact-item-c').toggleClass('contact-item-hover');
-        });
+    });
 });
 
 /* -------------------- Scroll to Top Button -------------------- */
